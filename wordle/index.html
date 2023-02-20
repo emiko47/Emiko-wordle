@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
     <title>Wordle</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width", user-scalable =no/>
     <link rel="stylesheet" href="./style.css" />
+    <script src="./wordle.js"></script>
   </head>
   <body>
-    <script src="./wordle.js"></script>
+    <navbar><div><h1>Wordle</h1></div><div id = "buttons"><div id="changetheme">&#9681</div><div id="help">&#63</div><div id="info">&#9432</div></div></navbar>
+    <hr> <!--creates a thin line under the head-->
+    
+
+    
+    <br><!--creates small blank empty space under the thin line-->
+    <div class = "fullbody">
+      <div id = "board"></div>
+      <div id = congratulations style = "display:none;"><img src ="https://res.cloudinary.com/mkf/image/upload/v1675467141/ENSF-381/labs/congrats_fkscna.gif"></div>
+      <div id = "vertical_line"></div>
+      <div id = "infotext">
+        <h3>How To Play</h3>
+        <p></p>
+        <ul>
+          <li>Start typing. The letters will appear in the boxes.</li>
+          <li>Remove letters with backspace.</li>
+          <li>Hit Enter/Return to submit an answer.</li>
+          <li>Letters with green background are in the right spot.</li>
+          <li>Letters with yellow background exist in the word, but are in the wrong spots.</li>
+          <li>Letters with gray background do not exist in the word.</li>
+          <li>If you need a hint, click the &#63 icon.</li>
+
+        </ul>
+      </div>
+        
+      
+    </div>
+    <div id = "startover">Start Over</div>
+    
+    
+    <br>
+    <h1 id ="answer"></h1>
+
+    <section id = bottom></section>
+
+  
+    <footer class = "foot">
+      <p>&#169 Emiko Wordle 2023</p>
+    </footer>
+    
   </body>
 </html>
+
+
+
