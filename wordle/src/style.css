@@ -5,6 +5,7 @@ body {
 .navbar{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 hr {
@@ -22,7 +23,7 @@ hr {
   height: 275px;
  
   margin-top: 6px;
-  margin-left: 41%;
+  
   display: flex; /*keeps our tile elements within the board object*/
   flex-wrap: wrap;
 }
@@ -97,9 +98,10 @@ hr {
 .fullbody{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 #infotext{
-  text-align: left;
+  text-align: center;
   
 }
 li{
@@ -135,7 +137,10 @@ body{
   border-top: 1px solid gray;
   margin-top: 0%;
 }
-
+#d_page{
+  display:flex;
+  align-items: center;
+}
 
 #startover{
   width: 90px;
@@ -145,7 +150,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 47%;
+  margin-left: 45%;
+  
 }
 #startover:hover{
   background-color: darkgreen;

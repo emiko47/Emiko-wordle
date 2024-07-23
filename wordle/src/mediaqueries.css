@@ -1,7 +1,7 @@
 @media screen and (max-width: 1200px) {
     .board{
         width: 200px;
-        margin-left: 30px;
+        align-items: center;
     }
     .fullbody{
         display: flex;
@@ -11,9 +11,35 @@
     #con_img{
         width: 200px;
     }
+    #startover{
+        margin-left: 43%;
+    }
+    
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
+    #board{
+        width: 200px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .fullbody{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    #con_img{
+        width: 200px;
+    }
+    .tile{
+        width: 45px;
+        height: 45px;
+        margin: 0.5px;
+    }
+    #startover{
+        margin-left: 40%;
+    }
+
 
 }
